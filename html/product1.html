@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>sanpham</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        /* Thanh điều hướng */
+        .navbar {
+            padding: 1rem 2rem;
+        }
+
+        .navbar-brand img {
+            width: 50px;
+        }
+
+        .navbar-brand span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: blueviolet;
+            margin-left: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1rem;
+            color: #fff;
+            margin-left: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #a54cfa;
+        }
+
+        .btn-outline-success {
+            font-size: 0.9rem;
+        }
+
+        .main-wrap {
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 80px); /* Trừ chiều cao thanh điều hướng */
+        }
+
+        .product {
+            display: flex;
+            gap: 2rem;
+            background: #2a2a2a;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .image-gallery {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .product-details {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .details h2 {
+            font-size: 2rem;
+            color: #a54cfa;
+            margin-bottom: 0.5rem;
+        }
+
+        .details h3 {
+            font-size: 1.6rem;
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+        }
+
+        .details h4 {
+            font-size: 1.2rem;
+            color: #ffd700;
+            margin-bottom: 1rem;
+        }
+
+        .details span {
+            display: block;
+            font-size: 1rem;
+            color: #ddd;
+            margin-bottom: 0.5rem;
+        }
+
+        .details span::before {
+            content: '• ';
+            color: #a54cfa;
+        }
+
+
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-gallery img {
+                max-width: 300px;
+            }
+
+            .product-details {
+                width: 100%;
+                text-align: center;
+            }
+
+            .details h2,
+            .details h3,
+            .details h4 {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="WorldPC.html">
+                <img src="img/logo4.jpg" alt="Logo" class="rounded-pill">
+                <span>World PC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="shop.html">quay lại</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="main-wrap">
+        <div class="product">
+            <div class="image-gallery">
+                <img src="img/shopping.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <div class="details">
+                    <h2>Destroid</h2>
+                    <h3>$2100.75</h3>
+                    <h4>15% Increase</h4>
+                    <span>CPU Intel Core i9 14900K 24C/32T (Up to 6.0 GHz, 36MB Cache, Raptor Lake Refresh) Imported</span>
+                    <span>Bo Mạch Chủ Asus Rog Strix Z790-A Gaming Wifi II DDR5</span>
+                    <span>16GB DDR4 3600MHz RAM (2x8GB)</span>
+                    <span>Ổ Cứng SSD: Samsung 990 EVO 1TB M.2 NVMe PCIe Gen 4.0 x4 SSD</span>
+                    <span>Card Màn Hình: Asus Rog Strix Geforce RTX 4080 Super 16GB GDDR6X OC Edition (White)</span>
+                    <span>Nguồn: Lian Li Edge Series EG1300 1300W White ATX 3.1/80 Plus Platinum Power Supply</span>
+                    <span>Màn hình: Roflex 150hz</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
