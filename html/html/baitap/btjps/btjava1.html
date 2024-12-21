@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.25">
+    <title>Bài Tập 1</title>
+    <script>
+        function tinhtong() {
+            let n, s;
+            s = 0;
+            n = document.forms["myform"]["fname"].value;
+
+            
+            if (n === "") {
+                alert("Giá trị không được để trống");
+                return; 
+            }
+
+            n = parseInt(n);
+            if (isNaN(n)) {
+                alert("Vui lòng nhập một số hợp lệ");
+                return;
+            }
+
+
+            for (let i = 0; i <= n; i++) {
+                s += i;
+            }
+            document.forms["myform"]["ftong"].value = s;
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" action="" method="get">
+        <label for="fname">Nhập n:</label>
+        <input type="text" id="fname" name="fname">
+        <label for="ftong">Tổng:</label>
+        <input type="text" id="ftong" name="tong" readonly>
+        <button type="button" onclick="tinhtong()">Tính</button>
+    </form>
+</body>
+</html>

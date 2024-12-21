@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>bai1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: rgb(122, 180, 83);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+section {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+
+aside {
+  float: right;
+  width: 30%; 
+  padding: 20px;
+  background-color: #ccc;
+  padding-top: -80px;
+}
+
+aside img {
+  width: 100%; 
+  height: auto; 
+  max-width: 250px; 
+  display: block;
+  margin: 0 auto; 
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  aside {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  section {
+    padding: 10px;
+  }
+}
+</style>
+</head>
+<body>
+    <header>
+        <h2>WEB CƠ BẢN.VN</h2>
+        <p>Hướng dẫn học lập trình web cơ bản đến nâng cao</p>
+    </header>
+
+    <section>
+        <article>
+            <h2>Layout là gì?</h2>
+            <p>Layout có thể tạm hiểu là cách mà chúng ta bố trí các thành phần chính trên một trang web.</p>
+            <p>Một trang web thường gồm các thành phần như:</p>
+            <ul>
+                <li>Header: Giới thiệu logo, một vài khẩu hiệu trang web.</li>
+                <li>Footer: Thông tin bản quyền của trang web.</li>
+                <li>Menu: Thanh chức năng.</li>
+                <li>Nội dung: Thông tin chính trên trang.</li>
+                <li>...</li>
+            </ul>
+           
+        </article>
+        <aside>
+            <img src="../img/logo2.png" alt="Varelt" width="30" height="60">
+        </aside>
+  
+    </section>
+
+    <footer>
+        <p>&copy; 2016 Web Cơ Bản. All rights reserved.</p>
+    </footer>
+</body>
+</html>
