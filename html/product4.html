@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>sanpham</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        /* Thanh điều hướng */
+        .navbar {
+            padding: 1rem 2rem;
+        }
+
+        .navbar-brand img {
+            width: 50px;
+        }
+
+        .navbar-brand span {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: blueviolet;
+            margin-left: 10px;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1rem;
+            color: #fff;
+            margin-left: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #a54cfa;
+        }
+
+        .btn-outline-success {
+            font-size: 0.9rem;
+        }
+
+        .main-wrap {
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 80px); /* Trừ chiều cao thanh điều hướng */
+        }
+
+        .product {
+            display: flex;
+            gap: 2rem;
+            background: #2a2a2a;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .image-gallery {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .product-details {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .details h2 {
+            font-size: 2rem;
+            color: #a54cfa;
+            margin-bottom: 0.5rem;
+        }
+
+        .details h3 {
+            font-size: 1.6rem;
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+        }
+
+        .details h4 {
+            font-size: 1.2rem;
+            color: #ffd700;
+            margin-bottom: 1rem;
+        }
+
+        .details span {
+            display: block;
+            font-size: 1rem;
+            color: #ddd;
+            margin-bottom: 0.5rem;
+        }
+
+        .details span::before {
+            content: '• ';
+            color: #a54cfa;
+        }
+
+
+        @media (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-gallery img {
+                max-width: 300px;
+            }
+
+            .product-details {
+                width: 100%;
+                text-align: center;
+            }
+
+            .details h2,
+            .details h3,
+            .details h4 {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="WorldPC.html">
+                <img src="img/logo4.jpg" alt="Logo" class="rounded-pill">
+                <span>World PC</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="shop.html">quay lại</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="main-wrap">
+        <div class="product">
+            <div class="image-gallery">
+                <img src="img/sp4.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <div class="details">
+                    <h2>guangathan</h2>
+                    <h3>$2100.75</h3>
+                    <h4>20% Increase</h4>
+                    <span>CPU Intel Core i5-12400F (Up To 4.40GHz, 6 Nhân 12 Luồng )</span>
+                    <span>Tản Nhiệt Khí JONSBO CR-1000 EVO BLACK (Color RGB)</span>
+                    <span>Ram PNY XLR8 Gaming 16GB DDR4 3200MHz</span>
+                    <span>Ổ cứng SSD WD Green SN350 Green 500GB NVMe</span>
+                    <span>VGA ASUS Dual GeForce RTX 3060 V2 12GB GDDR6 Dual</span>
+                    <span>Nguồn máy tính AIGO VK650 - 650W (85 Plus/ Active PFC/ Single Rail)</span>
+                    <span>Vỏ Case Xigmatek Cubi M NANO Black EN44953 Case Bể Cá</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
